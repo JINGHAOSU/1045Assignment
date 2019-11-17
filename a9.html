@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Assignment 9</title>
+  <meta charset="utf-8">
+  <script src="a9.js" type="text/javascript" defer></script>
+  <style>
+    table,th,td {
+      border:1px solid black;
+      border-collapse:collapse;
+      height:20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>CPSC 1045 Take Out Ordering</h1>
+  Main
+  <select id="main">
+    <option value="LambVindaloo">Lamb Vindaloo</option>
+    <option value="ButterChicken">Butter Chicken</option>
+    <option value="PrawnMasala">Prawn Masala</option>
+  </select>
+  <fieldset>
+    <legend>Select Your Side Dishes</legend>
+      Side Dishes
+      <select id="side">
+        <option value="Papadum">Papadum</option>
+        <option value="Samosas">Samosas</option>
+        <option value="Pakoras">Pakoras</option>
+        <option value="Kheer">Kheer</option>
+      </select>
+      <br>
+      <input id="add" type="button" value="Add Side Dish" onclick="add()">
+      <input id="remove" type="button" value="Remove Side Dish" onclick="remove()">
+      <br>
+      Current Side Dishes
+      <ul id="sd"></ul>
+  </fieldset>
+  Would you like Rice or Naan?
+  <input id="rice" type="checkbox">
+  Rice
+  <input id="naan" type="checkbox">
+  Naan
+  <h2>Your Order:</h2>
+  <input id="addMeal" type="button" value="Add Meal" onclick="addMeal()">
+  <input id="removeMeal" type="button" value="Remove Meal" onclick="removeMeal()">
+  <input id="resetOrder" type="button" value="Reset Order" onclick="resetOrder()"><br>
+  <table style="width:40%" id="table1">
+  </table>
+</body>
+</html>
